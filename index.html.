@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosso dia 09 🤍</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #0e0f22;
+      color: #fff;
+    }
+    h1 {
+      font-size: 36px;
+      margin-top: 50px;
+    }
+    p {
+      font-size: 18px;
+    }
+    .estrela {
+      position: absolute;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .estrela:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <h1>Bem-vindo ao nosso mapa estelar 💫</h1>
+  <p>Click nas estrelas para ver mais!</p>
+
+  <!-- Estrelas no mapa -->
+  <div style="position: relative; height: 500px;">
+    <img src="estrela1.jpg" alt="Estrela 1" class="estrela" style="top: 100px; left: 150px;" onclick="window.location.href='media/foto1.jpg';">
+    <img src="estrela2.jpg" alt="Estrela 2" class="estrela" style="top: 200px; left: 300px;" onclick="window.location.href='media/foto2.jpg';">
+  </div>
+</body>
+</html>
