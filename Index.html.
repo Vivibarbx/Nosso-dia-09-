@@ -6,61 +6,16 @@
   <title>Nosso dia 09 🤍</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-image: url( 'universo.jpg'); /IMG_0755.jpeg/
+      background-image: url('IMG_0755.jpeg');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
       height: 100vh;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-    h1 {
-      font-size: 36px;
-      margin-top: 50px;
-    }
-    p {
-      font-size: 18px;
-    }
-    .nebulosa {
-      width: 300px;
-      height: 300px;
-      background-image: url('nebulosa.jpg'); /* Substitua com a imagem da nebulosa */
-      background-size: cover;
-      background-position: center;
-      border-radius: 50%;
-      transition: transform 0.3s ease-in-out;
-    }
-    .nebulosa:hover {
-      transform: scale(1.2);
-    }
-    .estrela {
-      position: absolute;
-      cursor: pointer;
-      transition: transform 0.3s;
-    }
-    .estrela:hover {
-      transform: scale(1.2);
     }
   </style>
 </head>
 <body>
-  <h1>Bem-vindo ao nosso mapa estelar 💫</h1>
-  <p>Click nas estrelas para ver mais!</p>
-
-  <!-- Nebulosa no centro -->
-  <div class="nebulosa"></div>
-
-  <!-- Estrelas no mapa -->
-  <div style="position: relative; height: 500px;">
-    <img src="estrela1.jpg" alt="Estrela 1" class="estrela" style="top: 100px; left: 150px;" onclick="window.location.href='media/foto1.jpg';">
-    <img src="estrela2.jpg" alt="Estrela 2" class="estrela" style="top: 200px; left: 300px;" onclick="window.location.href='media/foto2.jpg';">
-  </div>
 </body>
 </html>
