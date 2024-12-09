@@ -1,97 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosso dia 09 🤍</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            margin-top: 50px;
-        }
-    </<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosso dia 09 🤍</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            margin: 0;
-            padding: 20px;
-        }
-
-        h1 {
-            margin-top: 50px;
-        }
-
-        .star {
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            background-color: white;
-            border-radius: 50%;
-            cursor: pointer;
-            animation: twinkle 1.5s infinite alternate;
-        }
-
-        @keyframes twinkle {
-            0% { opacity: 0.5; }
-            100% { opacity: 1; }
-        }
-
-        #message {
-            margin-top: 30px;
-            font-size: 20px;
-            color: #ff6347;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosso dia 09 🤍</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('universo.jpg'); /* Substitua com o nome da imagem do universo */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    h1 {
+      font-size: 36px;
+      margin-top: 50px;
+    }
+    p {
+      font-size: 18px;
+    }
+    .nebulosa {
+      width: 300px;
+      height: 300px;
+      background-image: url('nebulosa.jpg'); /* Substitua com a imagem da nebulosa */
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+      transition: transform 0.3s ease-in-out;
+    }
+    .nebulosa:hover {
+      transform: scale(1.2);
+    }
+    .estrela {
+      position: absolute;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .estrela:hover {
+      transform: scale(1.2);
+    }
+  </style>
 </head>
 <body>
-    <h1>Nosso dia 09 🤍</h1>
-    <p>Clique nas estrelas para descobrir mensagens especiais.</p>
+  <h1>Bem-vindo ao nosso mapa estelar 💫</h1>
+  <p>Click nas estrelas para ver mais!</p>
 
-    <div id="message"></div>
+  <!-- Nebulosa no centro -->
+  <div class="nebulosa"></div>
 
-    <script>
-        // Função para gerar as estrelas
-        function createStar(x, y) {
-            const star = document.createElement('div');
-            star.classList.add('star');
-            star.style.left = `${x}px`;
-            star.style.top = `${y}px`;
-
-            // Adicionar um evento de clique para cada estrela
-            star.addEventListener('click', () => {
-                document.getElementById('message').innerHTML = `Você clicou na estrela (${x}, ${y})!`;
-            });
-
-            document.body.appendChild(star);
-        }
-
-        // Gerar estrelas aleatórias no fundo
-        for (let i = 0; i < 100; i++) {
-            const x = Math.random() * window.innerWidth;
-            const y = Math.random() * window.innerHeight;
-            createStar(x, y);
-        }
-    </script>
-</body>
-</html>
-</head>
-<body>
-    <h1>Nosso dia 09 🤍</h1>
-    <p>Clique nas estrelas para descobrir mensagens especiais.</p>
+  <!-- Estrelas no mapa -->
+  <div style="position: relative; height: 500px;">
+    <img src="estrela1.jpg" alt="Estrela 1" class="estrela" style="top: 100px; left: 150px;" onclick="window.location.href='media/foto1.jpg';">
+    <img src="estrela2.jpg" alt="Estrela 2" class="estrela" style="top: 200px; left: 300px;" onclick="window.location.href='media/foto2.jpg';">
+  </div>
 </body>
 </html>
